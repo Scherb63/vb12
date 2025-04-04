@@ -49,7 +49,7 @@
     }
 
     .hero-title {
-        font-size: 45px;
+        font-size: calc(45px - 2vw);
         line-height: 1.06667;
         margin-bottom: 15px;
     }
@@ -93,7 +93,7 @@
     }
 
     .header-title {
-        font-size: 35px;
+        font-size: calc(35px - 2vw);
         line-height: 1;
     }
 
@@ -110,10 +110,11 @@
 
     .project-card {
         flex-direction: column;
+        align-items: baseline;
     }
 
     .project-title {
-        font-size: 35px;
+        font-size: calc(35px - 2vw);
         line-height: 1.28571;
         margin-bottom: 24px;
     }
@@ -129,7 +130,7 @@
     }
 
     .project-description {
-        max-width: max-content;
+        min-width: 100%;
     }
 
     .project-desc {
@@ -167,17 +168,157 @@
     .social-btn {
         margin-top: 24px;
         padding: 35px 90px;
-        font-size: 21px;
+        font-size: calc(21px - 1vw);
         line-height: 1.33867;
     }
+
     .ico-social-btn {
         width: 24px;
         height: 24px;
-      }
-      
+    }
+
 
     .row-btn-down {
         flex-direction: column
     }
 
+}
+
+@media screen and (max-width: 390px) {
+    .header_logo-img {
+        height: 23px;
+        width: 73px;
+    }
+
+    .line-header-segment {
+        top: 80px;
+    }
+
+    .other-text-logo {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .hero-title {
+        font-size: calc(45px - 2vw);
+        line-height: 1.06667;
+    }
+
+    .hero-block {
+        padding-top: 59px;
+    }
+
+    .hero-block br {
+        display: none;
+    }
+
+    .hero-text-img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .btn-top {
+        font-size: 12px;
+        line-height: .28571;
+        padding: 20px 26px;
+    }
+
+    .line-header-segment {
+        top: 45px;
+    }
+
+    .horizontal-line {
+        width: 45px;
+
+    }
+
+    .btn-wrap,
+    .project-btn {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .other-text-logo {
+        width: max-content;
+    }
+
+    .header_list {
+        display: none;
+    }
+
+    .btn-segment {
+        flex-direction: column;
+    }
+
+    .project-all-blocks {
+        margin-bottom: 73px;
+    }
+
+    .project-line-block {
+        padding: 14px 39px;
+    }
+
+    .project-card.right {
+        flex-direction: column-reverse;
+    }
+
+    .project-img:not(.block-right) {
+        margin-right: auto;
+    }
+
+    .header-title {
+        font-size: calc(35px - 2vw);
+        line-height: 1;
+    }
+
+    .rotate-block {
+        font-size: 11px;
+        line-height: 1;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+        margin-left: -5px;
+    }
+
+    .header_nav {
+        margin: 0;
+        justify-content: end;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-title {
+        font-size: calc(35px - 2vw);
+        line-height: 1.28571;
+        margin-bottom: 24px;
+    }
+
+    .row-btn-down {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        margin-top: 24px;
+        padding: 35px 90px;
+        font-size: calc(21px - 1.5vw);
+        line-height: 1.33867;
+    }
+
+    .img-hero-bg {
+        display: none;
+    }
+
+    .tags-item {
+        padding: 7px 21px;
+        font-size: 11px;
+        line-height: 2.00801;
+    }
+    .marquee-section {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
 }
